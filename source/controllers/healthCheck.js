@@ -7,7 +7,7 @@ var logging_1 = __importDefault(require("../config/logging"));
 var NAMESPACE = 'Health-Check';
 var sampleHealthCheck = function (req, res, next) {
     logging_1.default.info(NAMESPACE, "");
-    return res.status(200).json({
+    return res.send().status(200).json({
         status: 'available'
     });
 };
