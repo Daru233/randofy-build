@@ -2,15 +2,13 @@
   "name": "randofy",
   "version": "1.0.0",
   "description": "Discover music easily.",
-  "main": "source/server.ts",
+  "main": "source/server.js",
   "engines": {
     "node": "14.15.5",
     "npm": "6.14.11"
   },
   "scripts": {
     "start": "node source/server.js",
-    "transpile-js": "rm -rf build/ && prettier --write source/ && tsc && cp package.json build/ && cp package-lock.json build/",
-    "build": "node source/server.js",
     "test": "jest --detectOpenHandles"
   },
   "repository": {
