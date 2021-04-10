@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 var SERVER_HOSTNAME = process.env.HOSTNAME || "0.0.0.0"
-var PORT = process.env.PORT;
+var PORT = process.env.PORT || 8080;
 var SERVER = {
     hostname: SERVER_HOSTNAME,
     port: PORT
